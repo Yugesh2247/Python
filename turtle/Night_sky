@@ -1,0 +1,28 @@
+import random
+import turtle
+
+t=turtle.Turtle()
+s=turtle.Screen()
+t.color("white")
+s.bgcolor('black')
+s.title("Night_Sky")
+
+def start():
+    for i in range(5):
+        t.pendown()
+        t.fd(10)
+        t.right(144)      
+s.colormode(255)
+while True:
+    x=random.randint(-400,250)
+    y=random.randint(-400,250)
+    r=random.randint(0,255)
+    g=random.randint(0,255)
+    b=random.randint(0,255)
+    t.pencolor(r,g,b)
+    t.penup()
+    t.goto(x,y)
+    start()  
+    
+    
+turtle.done()   
