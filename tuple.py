@@ -1,0 +1,6 @@
+tuple=(1,2,3,4,5,4)
+print(tuple)
+tuple.append("selena")
+print(tuple)
+tuple.remove(1)
+print(tuple)
